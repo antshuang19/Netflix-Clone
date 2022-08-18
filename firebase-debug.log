@@ -1,0 +1,62 @@
+[debug] [2022-08-17T10:33:08.655Z] ----------------------------------------------------------------------
+[debug] [2022-08-17T10:33:08.658Z] Command:       /Users/anthonyhuang/.nvm/versions/node/v14.9.0/bin/node /Users/anthonyhuang/.nvm/versions/node/v14.9.0/bin/firebase login --no-localhost
+[debug] [2022-08-17T10:33:08.659Z] CLI Version:   10.9.2
+[debug] [2022-08-17T10:33:08.659Z] Platform:      darwin
+[debug] [2022-08-17T10:33:08.659Z] Node Version:  v14.9.0
+[debug] [2022-08-17T10:33:08.661Z] Time:          Wed Aug 17 2022 18:33:08 GMT+0800 (China Standard Time)
+[debug] [2022-08-17T10:33:08.661Z] ----------------------------------------------------------------------
+[debug] 
+[info] i  Firebase optionally collects CLI usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[debug] [2022-08-18T15:49:24.479Z] ----------------------------------------------------------------------
+[debug] [2022-08-18T15:49:24.481Z] Command:       /Users/anthonyhuang/.nvm/versions/node/v14.9.0/bin/node /Users/anthonyhuang/.nvm/versions/node/v14.9.0/bin/firebase login
+[debug] [2022-08-18T15:49:24.482Z] CLI Version:   10.9.2
+[debug] [2022-08-18T15:49:24.482Z] Platform:      darwin
+[debug] [2022-08-18T15:49:24.482Z] Node Version:  v14.9.0
+[debug] [2022-08-18T15:49:24.483Z] Time:          Thu Aug 18 2022 23:49:24 GMT+0800 (China Standard Time)
+[debug] [2022-08-18T15:49:24.483Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-08-18T15:49:24.489Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[info] i  Firebase optionally collects CLI usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[debug] [2022-08-18T15:49:27.967Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2022-08-18T15:49:27.967Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] i  To change your data collection preference at any time, run `firebase logout` and log in again. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=56198513&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2022-08-18T15:49:43.387Z] >>> HTTP REQUEST POST https://accounts.google.com/o/oauth2/token  
+ {"code":"4/0AdQt8qhv-lshCABoq6JemjiEBbLBKZ24XwonPfrKS6rkdBr7JQoIrKsLufxqL89ekY-RXA","client_id":"563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com","client_secret":"j9iVZfS8kkCEFUPaAeJV0sAi","redirect_uri":"http://localhost:9005","grant_type":"authorization_code"}
+[debug] [2022-08-18T15:50:58.403Z] Token Fetch Error: FirebaseError: Server Error. connect ETIMEDOUT 142.251.43.13:443
+    at Request._callback (/Users/anthonyhuang/.nvm/versions/node/v14.9.0/lib/node_modules/firebase-tools/lib/api.js:32:31)
+    at self.callback (/Users/anthonyhuang/.nvm/versions/node/v14.9.0/lib/node_modules/firebase-tools/node_modules/request/request.js:185:22)
+    at Request.emit (events.js:314:20)
+    at Request.EventEmitter.emit (domain.js:486:12)
+    at Request.onRequestError (/Users/anthonyhuang/.nvm/versions/node/v14.9.0/lib/node_modules/firebase-tools/node_modules/request/request.js:877:8)
+    at ClientRequest.emit (events.js:314:20)
+    at ClientRequest.EventEmitter.emit (domain.js:486:12)
+    at TLSSocket.socketErrorListener (_http_client.js:469:9)
+    at TLSSocket.emit (events.js:314:20)
+    at TLSSocket.EventEmitter.emit (domain.js:486:12)
+    at emitErrorNT (internal/streams/destroy.js:100:8)
+    at emitErrorCloseNT (internal/streams/destroy.js:68:3)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+[debug] [2022-08-18T15:50:58.412Z] >>> [apiv2][query] POST https://auth.firebase.tools/attest [none]
+[debug] [2022-08-18T15:50:58.413Z] >>> [apiv2][body] POST https://auth.firebase.tools/attest {"session_id":"993886a8-9d5c-43fd-b75b-aa4e57280a40"}
+[debug] [2022-08-18T15:50:59.072Z] <<< [apiv2][status] POST https://auth.firebase.tools/attest 200
+[debug] [2022-08-18T15:50:59.073Z] <<< [apiv2][body] POST https://auth.firebase.tools/attest {"token":"Rz9BHiJGlQ8SraUupuKMaSSR4k-XJSu2M7o3daYw1nA"}
+[info] 
+[info] To sign in to the Firebase CLI:
+[info] 
+[info] 1. Take note of your session ID:
+[info] 
+[info]    99388
+[info] 
+[info] 2. Visit the URL below on any device and follow the instructions to get your code:
+[info] 
+[info]    https://auth.firebase.tools/login?code_challenge=6dB5LSmRpwfMOJEFTwwlXiHvubmpbPUrz411eNLudXk&session=993886a8-9d5c-43fd-b75b-aa4e57280a40&attest=Rz9BHiJGlQ8SraUupuKMaSSR4k-XJSu2M7o3daYw1nA
+[info] 
+[info] 3. Paste or enter the authorization code below once you have it:
+[info] 
